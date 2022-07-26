@@ -1,33 +1,83 @@
 <!DOCTYPE html>
-<html> 
+<html>
     <head>
         <title>In the Code Garden</title>
         <link rel="stylesheet" href="style.css"></link>
+        <link rel="stylesheet" href="style.css"></link>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
-        <h1>
-            In the Code Garden
-        </h1>
-
-        <h3>
-            Join me, Renee Noble, to <em>grow</em> your coding skills!
-        </h3>
-
-        <img src="img/renee-garden.png">
-
-        <p>Each week we’ll tackle a different concept, mini project, or coding tip. Join us to take a coding journey in this fun and friendly stream series!</p> 
-
-       
-
-        <h3>Topics so far:</h3>
-        <ul>
-            <li><a href="python-intro.html">Intro to <strong>Python</strong></a></li>
-            <li>Essential Python <strong>Data Structures</strong></li>
-            <li><strong>Data Science</strong> and Visualisiation with Python</li>
-            <li><strong>Front-End</strong> Web Development Basics</li>
+        <h1 id="home">In<br> the<br> Code<br> Garden</h1>
+        <ul id="topnav" class="flex-container">
+            <li class="flex-item" ><a href="#home">Home</a></li>
+            <li class="flex-item" ><a href="#bio"><div>Who Am I</div></a></li>
+            <li class="flex-item" ><a href="#topics"><div>Topics so far</div></a></li>
+            <li class="flex-item" ><a href="#puzzle"><div>Python puzzle</div></a></li>
         </ul>
 
-        
+        <main>
+            <h3 id="tag-line">
+                Join me, Renee Noble, to <span>grow</span> your coding skills!
+            </h3>
+
+            <p>
+                Each week we’ll tackle a different concept, mini project, or coding tips. Come along to take a coding journey in this fun and friendly stream series!
+            </p> 
+
+            <div id="bio">
+                <div class="split-pic">
+                    <div class="pic-text">
+                        <h3>
+                            Who am I?
+                        </h3>
+                        <p>I'm Renee Noble, Microsoft Regional Cloud Advocate for Australia!</p>
+                    </div>
+                    <img src="img/renee.png">
+                </div>
+
+                <div class="split-pic">
+                    <div class="pic-text">
+                        <h3>
+                            What do I do?
+                        </h3>
+                        <p>I combine tech, education, and community!</p>
+                    </div>
+                    <img src="img/renee-teaching.jpg">
+                </div>
+
+            </div>
+
+            <h3 id="topics">Topics so far:</h3>
+            <ul id="topics-list">
+                <li><a href="python-intro.html">Intro to <strong>Python</strong></a></li>
+                <li>Essential Python <strong>Data Structures</strong></li>
+                <li><strong>Data Science</strong> and Visualisiation with Python</li>
+                <li><strong>Front-End</strong> Web Development Basics</li>
+
+            </ul>
+        </div>
+
+        <div id="puzzle">
+            <h3>Try this Python Puzzle!</h3>
+            <img id="puzzlImg" src="img/puzzle.png">
+
+            <form>
+                <label for="answer">What prints out?</label><br>
+                <input type="text" id="answer">
+                <input type="submit" id="answerButton">
+            </form>
+
+            <img id="winImg"></img>
+            <h4 hidden id="guessHeader">Guesses</h4>
+            <ul id="guesses"></ul>
+        </div>
     </body>
+
+    <script type="text/javascript" src="script.js"></script>
 </html>
+
